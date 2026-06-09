@@ -1030,6 +1030,7 @@ body.light-mode .education-card {
   }
 
   .project-card {
+    display: block !important;
     border: none !important;
     background: transparent !important;
     padding: 0 !important;
@@ -1040,7 +1041,7 @@ body.light-mode .education-card {
 
   .project-header {
     display: inline !important;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
   }
 
   .project-title {
@@ -1048,21 +1049,27 @@ body.light-mode .education-card {
     font-size: 9pt !important;
     font-weight: bold !important;
     color: #1b4cbe !important;
+    margin: 0 !important;
   }
 
   /* Hide badges, print simple text representation of stack */
   .project-tech-list {
     display: inline !important;
-    margin-left: 0 !important;
     font-size: 8.2pt !important;
-    font-style: italic !important;
-    color: #475569 !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    font-weight: bold !important;
   }
 
   .project-tech-list::before {
     content: " \2014  " !important; /* Unicode em-dash */
     font-style: normal !important;
     font-weight: normal !important;
+  }
+
+  .project-bullets {
+    display: block !important;
+    margin-top: 2pt !important;
   }
 
   .tech-badge {
