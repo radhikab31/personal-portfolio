@@ -1039,10 +1039,12 @@ body.light-mode .education-card {
   }
 
   .project-header {
-    margin-bottom: 1pt !important;
+    display: inline !important;
+    margin-bottom: 0 !important;
   }
 
   .project-title {
+    display: inline !important;
     font-size: 9pt !important;
     font-weight: bold !important;
     color: #1b4cbe !important;
@@ -1050,16 +1052,17 @@ body.light-mode .education-card {
 
   /* Hide badges, print simple text representation of stack */
   .project-tech-list {
-    display: block !important;
-    margin-bottom: 2pt !important;
-    font-size: 8pt !important;
+    display: inline !important;
+    margin-left: 0 !important;
+    font-size: 8.2pt !important;
     font-style: italic !important;
     color: #475569 !important;
   }
 
   .project-tech-list::before {
-    content: "Stack: " !important;
-    font-weight: bold !important;
+    content: " \2014  " !important; /* Unicode em-dash */
+    font-style: normal !important;
+    font-weight: normal !important;
   }
 
   .tech-badge {
